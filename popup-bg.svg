@@ -1,0 +1,44 @@
+<svg width="773" height="658" viewBox="0 0 773 658" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_gnnf_1_9)">
+<path d="M535 60C633.307 60 713 139.693 713 238C713 285.038 694.753 327.812 664.953 359.636C676.498 381.096 683 405.338 683 431C683 518.813 606.888 590 513 590C466.244 590 423.898 572.344 393.164 543.773C367.21 576.668 325.515 598 278.5 598C199.799 598 136 538.23 136 464.5C136 457.198 136.627 450.034 137.831 443.051C91.9128 422.09 60 375.773 60 322C60 254.049 110.959 198.001 176.746 189.985C193.929 121.619 255.802 71 329.5 71C363.907 71 395.735 82.0351 421.644 100.756C452.432 75.2977 491.929 60 535 60Z" fill="white" fill-opacity="0.6"/>
+</g>
+<defs>
+<filter id="filter0_gnnf_1_9" x="0" y="0" width="773" height="658" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.66666668653488159 0.66666668653488159" numOctaves="3" seed="9114" />
+<feDisplacementMap in="shape" scale="120" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect1_texture_1_9">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+<feTurbulence type="fractalNoise" baseFrequency="0.40000000596046448 0.40000000596046448" stitchTiles="stitch" numOctaves="3" result="noise" seed="8731" />
+<feComponentTransfer in="noise" result="coloredNoise1">
+<feFuncR type="linear" slope="2" intercept="-0.5" />
+<feFuncG type="linear" slope="2" intercept="-0.5" />
+<feFuncB type="linear" slope="2" intercept="-0.5" />
+<feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="effect1_texture_1_9" in="coloredNoise1" result="noise1Clipped" />
+<feComponentTransfer in="noise1Clipped" result="color1">
+<feFuncA type="table" tableValues="0 0.15" />
+</feComponentTransfer>
+<feMerge result="effect2_noise_1_9">
+<feMergeNode in="effect1_texture_1_9" />
+<feMergeNode in="color1" />
+</feMerge>
+<feTurbulence type="fractalNoise" baseFrequency="0.3333333432674408 0.3333333432674408" stitchTiles="stitch" numOctaves="3" result="noise" seed="9225" />
+<feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+<feComponentTransfer in="alphaNoise" result="coloredNoise1">
+<feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+</feComponentTransfer>
+<feComposite operator="in" in2="effect2_noise_1_9" in="coloredNoise1" result="noise1Clipped" />
+<feFlood flood-color="rgba(222, 222, 222, 0.6)" result="color1Flood" />
+<feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+<feMerge result="effect3_noise_1_9">
+<feMergeNode in="effect2_noise_1_9" />
+<feMergeNode in="color1" />
+</feMerge>
+<feGaussianBlur stdDeviation="1.5" result="effect4_foregroundBlur_1_9"/>
+</filter>
+</defs>
+</svg>
